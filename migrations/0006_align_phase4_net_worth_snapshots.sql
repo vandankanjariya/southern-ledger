@@ -1,0 +1,11 @@
+UPDATE net_worth_snapshots SET assets_cents = 87800000, liabilities_cents = 59000000 WHERE snapshot_month = '2025-07';
+UPDATE net_worth_snapshots SET assets_cents = 88650000, liabilities_cents = 58680000 WHERE snapshot_month = '2025-08';
+UPDATE net_worth_snapshots SET assets_cents = 89230000, liabilities_cents = 58360000 WHERE snapshot_month = '2025-09';
+UPDATE net_worth_snapshots SET assets_cents = 90190000, liabilities_cents = 58040000 WHERE snapshot_month = '2025-10';
+UPDATE net_worth_snapshots SET assets_cents = 91240000, liabilities_cents = 57710000 WHERE snapshot_month = '2025-11';
+UPDATE net_worth_snapshots SET assets_cents = 92010000, liabilities_cents = 57390000 WHERE snapshot_month = '2025-12';
+UPDATE net_worth_snapshots SET assets_cents = 92670000, liabilities_cents = 57060000 WHERE snapshot_month = '2026-01';
+UPDATE net_worth_snapshots SET assets_cents = 93460000, liabilities_cents = 56730000 WHERE snapshot_month = '2026-02';
+UPDATE net_worth_snapshots SET assets_cents = 94290000, liabilities_cents = 56390000 WHERE snapshot_month = '2026-03';
+UPDATE net_worth_snapshots SET assets_cents = 96500000, liabilities_cents = 56600000 WHERE snapshot_month = '2026-04';
+UPDATE net_worth_snapshots SET assets_cents = 97884000, liabilities_cents = 56196000 WHERE snapshot_month = '2026-05';
