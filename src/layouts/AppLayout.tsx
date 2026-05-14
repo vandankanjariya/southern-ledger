@@ -31,10 +31,10 @@ function AppShell() {
       >
         <div className="flex h-16 items-center justify-between border-b border-white/10 px-5">
           <div className="flex items-center gap-3">
-            <div className="grid h-9 w-9 place-items-center rounded-lg bg-brand-500 font-semibold">PF</div>
+            <div className="grid h-9 w-9 place-items-center rounded-lg bg-brand-500 font-semibold">SL</div>
             <div>
-              <p className="text-sm font-semibold">Finance Dashboard</p>
-              <p className="text-xs text-slate-400">Private AU finance</p>
+              <p className="text-sm font-semibold">Southern Ledger</p>
+              <p className="text-xs text-slate-400">Self-hosted finance</p>
             </div>
           </div>
           <button type="button" className="rounded-lg p-2 text-slate-300 hover:bg-white/10 lg:hidden" onClick={() => setSidebarOpen(false)}>

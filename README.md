@@ -4,6 +4,14 @@ Southern Ledger is a self-hostable personal finance dashboard for Australian hou
 
 It focuses on practical day-to-day finance work: account balances, cash flow, Australian financial year filtering, CSV imports, transaction review, reconciliation, tax tags, loan tracking, assets, liabilities, and net worth reporting.
 
+![Southern Ledger overview dashboard](docs/screenshots/overview.png)
+
+## Why This Exists
+
+Most finance tools are either cloud-first, bank-feed-first, or too generic for Australian tax-time review. Southern Ledger is built for people who want to keep their financial records private, import statements manually when needed, and still get a useful dashboard for cash flow, tax categories, loans, and net worth.
+
+The project starts with Cloudflare Workers and D1 because that stack is inexpensive, private by default when paired with Access, and easy to deploy. The frontend can still be used locally with mock data before any backend is configured.
+
 ## Features
 
 - Responsive React dashboard with account, transaction, tax, loan, and net worth views
@@ -12,6 +20,16 @@ It focuses on practical day-to-day finance work: account balances, cash flow, Au
 - Category rules, tax tags, transfer matching, and loan split suggestions
 - Mock fallback data for local UI development
 - Cloudflare Workers and D1 backend for private self-hosted deployments
+
+## Screenshots
+
+| Overview | CSV imports |
+| --- | --- |
+| ![Overview dashboard](docs/screenshots/overview.png) | ![CSV import staging](docs/screenshots/imports.png) |
+
+| Mobile overview |
+| --- |
+| ![Mobile overview](docs/screenshots/mobile-overview.png) |
 
 ## Stack
 
@@ -39,6 +57,18 @@ npm run dev:api
 
 The frontend falls back to mock data when the local API is unavailable, so the interface can be explored before D1 is configured.
 
+## Project Status
+
+Southern Ledger is an early public baseline. It is useful for exploring the dashboard, local development, CSV import workflows, and Cloudflare deployment patterns, but it is not a finished accounting product.
+
+Current focus:
+
+- Better CSV import adapters
+- More reconciliation review workflows
+- Clearer Cloudflare deployment docs
+- Export and accountant summary improvements
+- Optional provider-agnostic backend notes
+
 ## Local Database
 
 Apply D1 migrations locally:
@@ -61,6 +91,12 @@ npm run deploy:check
 ```
 
 See `DEPLOYMENT.md` and `SECURITY.md` before using real financial data.
+
+## Contributing
+
+Contributions are welcome, especially around statement formats, reconciliation workflows, documentation, and deployment examples.
+
+Start with `CONTRIBUTING.md` before opening a pull request.
 
 ## Security
 
