@@ -30,5 +30,8 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Generate Worker types
+        run: npm run types:worker
+
       - name: Build
         run: npm run build
